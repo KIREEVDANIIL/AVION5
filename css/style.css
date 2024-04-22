@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "ClashDisplay-Light" ;
+    src: url(../fonts/ClashDisplay-Light.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Clash Display" ;
+    src: url(../fonts/ClashDisplay-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Clash Display-Semibold" ;
+    src: url(../fonts/ClashDisplay-Semibold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Clash Display-Bold" ;
+    src: url(../fonts/ClashDisplay-Bold.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Satoshi" ;
+    src: url(../fonts/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: Satoshi;
+    color: red;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-lite-gray: #f9f9f9;
+    --color-dark-primary: #2a254b;
+    --color-nav-links: #726e8d;
+}
+
+.btn{
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+    padding: 16px 32px;
+    font-family: "Satoshi";
+    font-size:16px;
+}
+
+.btn:hover{
+    transition: all 0.8s;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+}
+
+header{
+    display: grid;
+    row-gap: 20px;
+    padding: 20px 2vw;
+}
+
+header>div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+}
+
+header>div svg{
+    height: 16px;
+}
+
+header>div div.icons{
+    justify-self: end;
+    display: grid;
+    column-gap: 1vw;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+header>div span{
+    font-family: "Clash Display";
+    justify-self: center;
+    font-size: 24px;
+}
+
+header nav{
+    justify-self: center;
+}
+
+header nav ul{
+    font-family: "Satoshi";
+    display: flex;
+    column-gap: 4vw;
+    list-style-type: none;
+    color: var(--color-nav-links);
+    font-size: 16px;
+    cursor: none;
+}
+
+header nav ul a:hover{
+    color: var(--color-black);
+    transition: all 0.7s;
+}
+
+main section.gold{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding-right: 8vw;
+    background-image: url(../images/gold.jpg);
+    height: 42vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 20%;
+}
+
+main section.gold div{
+    display: grid;
+    background-color: var(--color-white);
+    height: 64%;
+    grid-column: 2/3;
+    grid-template-rows: min-content;
+    padding: 5vw;
+}
+
+main section.gold div h1{
+    font-family: "Clash Display";
+    font-size: 32px;
+    font-weight: 400;
+}
+
+main section.gold div span{
+    font-family: "Satoshi";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main section.gold div a{
+    align-self: end;
+    justify-self: start;
+}
+
+main section.brand{
+    padding: 80px 6vw;
+    display: grid;
+    row-gap: 36px;
+    padding-bottom: 40px;
+}
+
+main section.brand h2{
+    font-family: "Clash Display";
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+
+main section.brand div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2vw;
+}
+
+main section.brand div article{
+    display: grid;
+    grid-template-rows: 24px repeat(2,1fr);
+    row-gap: 12px;
+    padding: 48px;
+    background-color: var(--color-lite-gray);
+}
+
+main section.brand div article svg{
+    height: 100%;
+}
+
+main section.brand div article h3{
+    font-family: "Clash Display";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main section.brand div article p{
+    font-family: "Satoshi";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+main section.topic{
+    padding-top: 40px;
+    padding: 80px 6vw;
+    display: grid;
+    row-gap: 36px;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2vw;
+    grid-template-rows: 305 1fr;
+}
+
+
+main section.topic article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.topic article:hover{
+    transform: scale(1.05);
+    transition: all 0.8s;
+}
+
+main section.topic article p{
+    font-size: 20px;
+    font-family: "Clash Display";
+    color: var(--color-black);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+main section.topic article span{
+    font-family: "Satoshi";
+    color: var(--color-black);
+}
+
+main section.topic a{
+    position: relative;
+    top: 50px;
+    left: 150%;
+    margin: 0 auto;
+}
+
+main section.topic a:hover{
+    transform: scale(1.05);
+    transition: all 0.5;
+}
